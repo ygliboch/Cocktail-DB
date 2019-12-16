@@ -81,6 +81,18 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		7352428F23A7B9C900B8428A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7382FDF323A111F40016D312 /* AppDelegate.swift */,
+				7382FDF523A111F40016D312 /* SceneDelegate.swift */,
+				7382FDFC23A111FB0016D312 /* Assets.xcassets */,
+				7382FDF923A111F40016D312 /* Main.storyboard */,
+				7382FDFE23A111FB0016D312 /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		7382FDE723A111F40016D312 = {
 			isa = PBXGroup;
 			children = (
@@ -102,12 +114,8 @@
 		7382FDF223A111F40016D312 /* Cocktail DB */ = {
 			isa = PBXGroup;
 			children = (
-				7382FDF323A111F40016D312 /* AppDelegate.swift */,
 				7382FE0123A111FB0016D312 /* Info.plist */,
-				7382FDF523A111F40016D312 /* SceneDelegate.swift */,
-				7382FDFC23A111FB0016D312 /* Assets.xcassets */,
-				7382FDF923A111F40016D312 /* Main.storyboard */,
-				7382FDFE23A111FB0016D312 /* LaunchScreen.storyboard */,
+				7352428F23A7B9C900B8428A /* Common */,
 				7382FE0A23A11F380016D312 /* Classes */,
 				7382FE1223A12C170016D312 /* Network */,
 			);
