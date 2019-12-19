@@ -22,12 +22,12 @@ class FiltersViewController: UIViewController {
     private var newSelectedCategories: [Category] = [] {
         didSet {
             newSelectedCategories.containsSameElements(as: selectedCategories) ?
-                hightApplyButton() :
+                hideApplyButton() :
                 showApplyButton()
         }
     }
     
-    //MARK: ViewController life cicle
+    //MARK: ViewController life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,7 @@ class FiltersViewController: UIViewController {
         }
     }
     
-    private func hightApplyButton() {
+    private func hideApplyButton() {
         guard applyFilterButton.alpha != 0 else { return }
         
         tableViewBottomConstraint.constant = 0
@@ -69,7 +69,7 @@ class FiltersViewController: UIViewController {
         }
     }
     
-    @IBAction func ApplyFilter(_ sender: Any) {
+    @IBAction func applyFilter(_ sender: Any) {
         delegate?.selectedCategories = newSelectedCategories
         navigationController?.popViewController(animated: true)
     }

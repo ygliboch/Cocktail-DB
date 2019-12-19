@@ -136,7 +136,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ApplyFilter:" destination="ZHT-cV-z4w" eventType="touchUpInside" id="ELC-NG-Aav"/>
+                                    <action selector="applyFilter:" destination="ZHT-cV-z4w" eventType="touchUpInside" id="lne-Op-hU7"/>
                                 </connections>
                             </button>
                         </subviews>

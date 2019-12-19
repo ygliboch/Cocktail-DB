@@ -55,8 +55,8 @@ class DrinksViewController: UIViewController {
     private var sections: [Section] = []
     
     //from FilterCategoriesDelegate
-    internal var categories: [Category] = []
-    internal var selectedCategories: [Category] = [] {
+    var categories: [Category] = []
+    var selectedCategories: [Category] = [] {
         didSet {
             refresh()
             configureFilterButtonIcon()
@@ -191,7 +191,7 @@ extension DrinksViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkCell", for: indexPath) as? DrinkTableViewCell
         cell?.nameLabel.text = sections[indexPath.section].drinks[indexPath.row].strDrink ?? ""
-        cell?.photoImageView.sd_setImage(with: URL(string: sections[indexPath.section].drinks[indexPath.row].strDrinkThumb!), completed: nil)
+        cell?.photoImageView.sd_setImage(with: URL(string: sections[indexPath.section].drinks[indexPath.row].strDrinkThumb ?? ""), completed: nil)
         return cell ?? UITableViewCell()
     }
     
